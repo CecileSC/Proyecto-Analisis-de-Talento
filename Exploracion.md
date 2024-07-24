@@ -36,7 +36,7 @@ Exploracion:
 6. DistanceFromHome: La distancia desde el hogar 
     6.1 Nulos: 0 ✔️
     6.2 Type int64 ✔️
-        ★ Pasar los valores negativos a positivo. 
+        ★ Pasar los valores negativos a positivo. ✔️
 
 7. Education: Nivel de educación 
     7.1. 1: 180
@@ -77,7 +77,7 @@ Exploracion:
     11.5. Nulos 0 ✔️
     ★ datos erroneos: pendiente de decidir si los datos distintos de 0,1,2,3,4 cogemos el primer digito o eliminamos.
     11.6. Type int64 ❌
-        ★ Cambiar a objet ? 
+        ★ Cambiar a objet ✔️
 
 12. Gender: El género
     12.1. Hombre:971
@@ -113,7 +113,7 @@ Exploracion:
     16.1. Nulos : 0 ✔️
     16.2. Type int64 ❌
         ★ Cambiar a objet ?
-    ★ Hay que unificar los nombres, mismo registro llamado de forma distintas (mANager, mAnaGeR, MANAgER, etc)
+    ★ Hay que unificar los nombres, mismo registro llamado de forma distintas (mANager, mAnaGeR, MANAgER, etc) ✔️
 
 17. JobSatisfaction: Nivel de satisfacción
     17.1. 1: 317
@@ -134,7 +134,7 @@ Exploracion:
         ★ Ver como tratamos estos nulos.
     18.7. Type int64 ❌
         ★ Cambiar a objet ?
-    ★ Tenemos que unificar nombres y repetir recuento
+    ★ Tenemos que unificar nombres y repetir recuento ✔️
 
 19. MonthlyIncome: Ingresos mensuales
     19.1. Nulos 843 ❌
@@ -162,10 +162,11 @@ Exploracion:
 
  22. Over18: mayor de 18 años
     22.1. Y: 713, 
-    22.2. Nulos 901 ❌
+    22.2. Nulos 901 
         ★ Ver como tratamos estos nulos.
     ★ Comprobar que es coherente con la columna edad.
     22.3. Type int64 ✔️
+    ELIMINADA ✔️
 
 23. OverTime: empleado trabaja horas extras
     23.1. Yes: 256
@@ -242,13 +243,14 @@ Exploracion:
     
 36. SameAsMonthlyIncome: Ingresos mensuales
     36.1. Nulos: 843.
+      ★ Se elimina la columna ✔️
 
 37. DateBirth: Año de nacimiento
     37.1. Nulos 0 ✔️
 
 38. Salary: Salario 
     38.1. Todos los valores 1000000000$ 
-        ★ Se elimina la columna
+        ★ Se elimina la columna ✔️
 
 39. RoleDepartament: El departamento y el rol
     39.1. Nulos: 1312
@@ -256,7 +258,7 @@ Exploracion:
 
 40. NUMBERCHILDREN: Número de hijos 
     40.1. Todos los valores nulos.
-        ★ Se elimina la columna
+        ★ Se elimina la columna  ✔️
     
 41. RemoteWork: teletrabajar 
     41.1. 0: 309
@@ -265,7 +267,7 @@ Exploracion:
     41.4. True: 345
     41.5. False: 305
     41.6. Nulos: 0 ✔️
-    ★ Unificar datos 0 y false - Yes, True y 1
+    ★ Unificar datos 0 y false - Yes, True y 1  ✔️
 
 
 
