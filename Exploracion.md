@@ -330,6 +330,31 @@ Exploracion:
 
 
 ## Pendiente
-1. Unificar Nombre de columnas.
-2. Ver Filas repetidas.
-3. Unificar nombre de las filas. dataframe[columna] = dataframe[columna].str.lower()
+
+Próximos Pasos 🚀
+1. Limpieza Adicional de Datos 🧼
+Revisar y corregir valores faltantes en columnas.
+Verificar y ajustar tipos de datos restantes.
+
+2. Gestión de Valores Nulos 🛠️
+Identificar todas las columnas con valores nulos.
+Decidir la estrategia para gestionar nulos (eliminación, imputación con media/mediana/moda, etc.).
+Implementar la estrategia de gestión de nulos en el notebook de EDA.
+3. Análisis Exploratorio de Datos Continuo 📊
+Generar más visualizaciones para identificar patrones y tendencias.
+Realizar análisis estadísticos adicionales para descubrir relaciones entre variables.
+Documentar los hallazgos en el notebook.
+4. Diseño de la Base de Datos 🗂️
+Definir la estructura de la base de datos (tablas, relaciones, claves primarias y foráneas).
+Crear scripts SQL para la creación de la base de datos y tablas.
+5. Inserción de Datos en la Base de Datos 📝
+Escribir scripts para cargar los datos transformados en la base de datos.
+
+6. Preparación para el Experimento A/B 🔬
+
+7. Automatización con ETL 🤖
+
+8. Creación del Informe Final 📈
+Actualizar el informe con nuevas visualizaciones y análisis.
+Redactar secciones adicionales del informe, incluyendo recomendaciones basadas en el análisis de datos.
+Preparar una presentación final con los resultados y recomendaciones para ABC Corporation.
