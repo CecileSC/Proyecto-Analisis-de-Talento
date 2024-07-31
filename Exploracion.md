@@ -1,15 +1,15 @@
 Exploracion:
 
 1. Age:La edad del empleado      
-    1.1 Nulos: 0 ✔️
-    1.2. Type object ❌
-        ★ Formato Objet - Pasar a int64 ✔️
+    1.1. Nulos: 0 ✔️
+    1.2. Formato Objet - Pasar a int64 ✔️
     1.3. Tipo de variable: Numérica ✔️ 
+    1.4. Convertir las edades str (veinticinco) a "25" ✔️
 
 2. Attrition: Si el empleado ha dejado la empresa
     2.1. Yes: 259    
     2.2  No: 1355    
-    2.3. 0 nulos 
+    2.3. 0 nulos ✔️
     2.4. Type object ✔️
     2.5. Tipo de variable: Categórica ✔️
     ★ Interesa ver el patrón común de los empleados que dejan la empresa y contrastar estos valores con el patrón de los empleados que se quedan.
@@ -18,25 +18,25 @@ Exploracion:
     3.1. travel_rarely: 586
     3.2. travel_frequently: 165
     3.3. non-travel: 91
+        3.3.1. pasar de "-" a "_" ★
     3.4. Nulos: 772 ❌
-        ★ Decidir lo que hacemos con esos nulos.
-    3.5. Type object ✔️
-    3.6. Tipo de variable: Categórica ✔️
-
+        ★ Decidir lo que hacemos con esos nulos.    
+    3.5. Convertir a capitalize ★
+   
 4. DailyRate: La tarifa diaria
     4.1. Nulos: 0 ✔️
-    4.2. Type object ❌
-        ★ Formato Objet - Pasar a int❌
+    4.2. Type object 
+        ★ Formato Objet - Pasar a int ✔️
     4.3. Tipo de variable: Numérica ✔️
 
 5. Department:El departamento
-    5.1. Research & Development 196    
+    5.1. Research & Development: 196    
+        5.1.1 Cambiar " " por "_" ★
     5.2. Sales 91    
-    5.3 Human Resources 15
+    5.3 Human Resources: 15
+        5.1.1 Cambiar " " por "_" ★
     5.4 Nulos: 1312 ❌
-        ★ Decidir lo que hacemos con esos nulos.    
-    5.5 Type object ✔️
-    5.6. Tipo de variable: Categórica ✔️
+        ★ Decidir lo que hacemos con esos nulos. 
 
 6. DistanceFromHome: La distancia desde el hogar 
     6.1 Nulos: 0 ✔️
@@ -67,7 +67,7 @@ Exploracion:
     8.8. Type object ✔️
     8.9. Tipo de variable: Categórica ✔️ 
 
-9. EmployeeCount: contar empleados
+9. EmployeeCount: contar empleados ❌
     9.1 Type int64 ✔️
     ★ Todos los valores son 1 - Eliminar Fila ✔️
 
@@ -340,13 +340,16 @@ Verificar y ajustar tipos de datos restantes.
 Identificar todas las columnas con valores nulos.
 Decidir la estrategia para gestionar nulos (eliminación, imputación con media/mediana/moda, etc.).
 Implementar la estrategia de gestión de nulos en el notebook de EDA.
+
 3. Análisis Exploratorio de Datos Continuo 📊
 Generar más visualizaciones para identificar patrones y tendencias.
 Realizar análisis estadísticos adicionales para descubrir relaciones entre variables.
 Documentar los hallazgos en el notebook.
+
 4. Diseño de la Base de Datos 🗂️
 Definir la estructura de la base de datos (tablas, relaciones, claves primarias y foráneas).
 Crear scripts SQL para la creación de la base de datos y tablas.
+
 5. Inserción de Datos en la Base de Datos 📝
 Escribir scripts para cargar los datos transformados en la base de datos.
 
