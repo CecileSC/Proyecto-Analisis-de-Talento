@@ -22,7 +22,7 @@ o	Cambiar tipo de dato de object a int64.☑️
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Reemplazar '_' por ' ' ☑️ y capitalizar los valores ( "travel_rarely" -> "Travel Rarely").❌
+o	Reemplazar '_' por ' ' ☑️ y capitalizar los valores ( "travel_rarely" -> "Travel Rarely").❌☑️ 
 o	Decidir el tratamiento de los nulos (posible imputación o eliminación).❌
 
 4. DailyRate 💰 (La tarifa diaria del empleado)
@@ -56,8 +56,8 @@ o	Convertir valores negativos a positivos.☑️
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórica con etiquetas descriptivas ( 1."Primary", 2."Secondary", 3."High School", 4. "Bachelor's", 5."Postgraduate")(1: 180, 2: 314, 3: 621, 4: 445, 5: 54).❌
-o   Convertir a object.❌
+o	Convertir a categórica con etiquetas descriptivas ( 1."Primary", 2."Secondary", 3."High School", 4. "Bachelor's", 5."Postgraduate")(1: 180, 2: 314, 3: 621, 4: 445, 5: 54).❌☑️
+o   Convertir a object.❌☑️
  
 8. EducationField 🧑‍🎓 (El campo de educación del empleado)
 •	Nulos: 745
@@ -90,9 +90,9 @@ o   Decidir que vamos a hacer con los nulos (lo vamos a dejar asi)❌
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas ( 1 "Very Dissatisfied", 2 "Dissatisfied", 3 "Satisfied", 4 "Very Satisfied")(1: 298, 2: 297, 3: 459, 4: 460). ❌
-o   Convertir a object.❌
-o   Datos erroneos: pendiente de decidir si los datos distintos de 0,1,2,3,4 cogemos el primer digito o eliminamos.❌
+o	Convertir a categórico con etiquetas ( 1 "Very Dissatisfied", 2 "Dissatisfied", 3 "Satisfied", 4 "Very Satisfied")(1: 298, 2: 297, 3: 459, 4: 460). ❌☑️
+o   Convertir a object.❌☑️
+o   Datos erroneos: pendiente de decidir si los datos distintos de 0,1,2,3,4 cogemos el primer digito o eliminamos.❌☑️
 
 12. Gender 👨‍👩‍👧‍👦 (El género del empleado)
 •	Nulos: 0
@@ -100,8 +100,8 @@ o   Datos erroneos: pendiente de decidir si los datos distintos de 0,1,2,3,4 cog
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas (0 "Male", 1 "Female")(Hombre:971, Mujer 643).❌
-o   Convertir a object.❌
+o	Convertir a categórico con etiquetas (0 "Male", 1 "Female")(Hombre:971, Mujer 643).❌☑️
+o   Convertir a object.❌☑️
 
 13. HourlyRate ⏰ (La tarifa por hora del empleado)
 •	Nulos: 0
@@ -118,8 +118,8 @@ o   Cambiar el 'not available'por nan☑️
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas descriptivas (e.g., "Very Low", "Low", "Moderate", "High")(1: 89, 2: 406, 3: 955, 4: 164)❌
-o   Convertir a object.❌
+o	Convertir a categórico con etiquetas descriptivas (e.g., "Very Low", "Low", "Moderate", "High")(1: 89, 2: 406, 3: 955, 4: 164)❌☑️
+o   Convertir a object.❌☑️
 
 15. JobLevel 🏢 (Nivel jerárquico del empleado en la empresa)
 •	Nulos: 0
@@ -127,8 +127,8 @@ o   Convertir a object.❌
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas jerárquicas (1 "Entry Level",2 "Assistant",3 "Coordinator",4 "Manager",5 "Director")(1: 586, 2: 597, 3: 242, 4: 113, 5: 76).❌
-o   Convertir a object.❌
+o	Convertir a categórico con etiquetas jerárquicas (1 "Entry Level",2 "Assistant",3 "Coordinator",4 "Manager",5 "Director")(1: 586, 2: 597, 3: 242, 4: 113, 5: 76).❌☑️
+o   Convertir a object.❌☑️
 
 16. JobRole 🏷️ (El rol o puesto de trabajo del empleado)
 •	Nulos: 0
@@ -136,7 +136,7 @@ o   Convertir a object.❌
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Unificar la nomenclatura para evitar inconsistencias (e.g., "Manager" vs "manager").❌
+o	Unificar la nomenclatura para evitar inconsistencias (e.g., "Manager" vs "manager").❌☑️
 
 
 17. JobSatisfaction 😊 (Nivel de satisfacción del empleado con su trabajo)
@@ -145,8 +145,8 @@ o	Unificar la nomenclatura para evitar inconsistencias (e.g., "Manager" vs "mana
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas (e.g., "Very Dissatisfied", "Dissatisfied", "Satisfied", "Very Satisfied")(1: 317, 2: 302, 3: 481, 4: 514).❌
-o   Convertir a object.❌
+o	Convertir a categórico con etiquetas (e.g., "Very Dissatisfied", "Dissatisfied", "Satisfied", "Very Satisfied")(1: 317, 2: 302, 3: 481, 4: 514).❌☑️
+o   Convertir a object.❌☑️
 
 18. MaritalStatus 💍 (El estado civil del empleado)
 •	Nulos: 651
@@ -210,7 +210,7 @@ o	Tratar los valores nulos y asegurarse de que los datos sean categóricos y con
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas (1 "Poor", 2 "Average", 3 "Good", 4 "Excellent").❌
+o	Convertir a categórico con etiquetas (1 "Poor", 2 "Average", 3 "Good", 4 "Excellent").❌☑️
 o   Decidir cómo manejar los valores nulos.❌
 
 26. RelationshipSatisfaction ❤️ (Nivel de satisfacción en las relaciones interpersonales)
@@ -219,7 +219,7 @@ o   Decidir cómo manejar los valores nulos.❌
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas (1 "Very Dissatisfied",2 "Dissatisfied", 3 "Satisfied",4 "Very Satisfied").❌
+o	Convertir a categórico con etiquetas (1 "Very Dissatisfied",2 "Dissatisfied", 3 "Satisfied",4 "Very Satisfied").❌☑️
 
 27. StandardHours ⏲️ (Las horas estándar de trabajo)
 •	Nulos: 1195
@@ -305,7 +305,7 @@ o	Decidir cómo manejar los valores nulos.❌
 •	Tipo de Dato: int64
 •	Tipo de Variable: Fecha
 •	Transformaciones:
-o	Mantener como int64 si solo se requiere el año, o convertir a datetime si se desea análisis temporal más detallado.❌
+o	Mantener como int64 si solo se requiere el año, o convertir a datetime si se desea análisis temporal más detallado. Mantener esta columna para la bbdd pero crear una nueva con el calculo de la edad? ❌
 
 38. Salary 💸 (Salario de los empleados)
 •	Nulos: 0
@@ -321,7 +321,7 @@ o	Eliminar columna☑️
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Normalizar nombres (minusculas, capitalize) y decidir cómo manejar los valores nulos.❌
+o	Normalizar nombres (minusculas, capitalize)☑️ y decidir cómo manejar los valores nulos.❌
 
 40. NumberChildren 👶 (Número de hijos de los empleados)
 •	Nulos: 1614
@@ -336,5 +336,5 @@ o	Normalizar nombres (minusculas, capitalize) y decidir cómo manejar los valore
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Unificar los valores a "Yes" y "No" para mayor consistencia.❌
+o	Unificar los valores a "Yes" y "No" para mayor consistencia.❌☑️
 

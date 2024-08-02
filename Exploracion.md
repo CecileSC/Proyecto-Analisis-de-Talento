@@ -18,7 +18,7 @@ Exploracion:
     3.1. travel_rarely: 586
     3.2. travel_frequently: 165
     3.3. non-travel: 91
-        3.3.1. pasar de "-" a "_" ★
+        3.3.1. pasar de "-" a "_" ★ ✔️
     3.4. Nulos: 772 ❌
         ★ Decidir lo que hacemos con esos nulos.    
     3.5. Convertir a capitalize ★
@@ -31,10 +31,10 @@ Exploracion:
 
 5. Department:El departamento
     5.1. Research & Development: 196    
-        5.1.1 Cambiar " " por "_" ★
+        5.1.1 Cambiar " " por "_" ★ ✔️
     5.2. Sales 91    
     5.3 Human Resources: 15
-        5.1.1 Cambiar " " por "_" ★
+        5.1.1 Cambiar " " por "_" ★ ✔️
     5.4 Nulos: 1312 ❌
         ★ Decidir lo que hacemos con esos nulos. 
 
