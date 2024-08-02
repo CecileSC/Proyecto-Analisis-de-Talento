@@ -1,7 +1,7 @@
 Exploración de Datos: Análisis EDA
 ________________________________________
 1. Age 🧑‍💼 (La edad del empleado)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 54
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -10,7 +10,7 @@ o	Convertir edades en texto (e.g., "veinticinco") a números (int64). ☑️
 o	Cambiar tipo de dato de object a int64.☑️
 
 2. Attrition 🏃‍♂️ (Indica si el empleado ha dejado la empresa)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 2
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -236,7 +236,7 @@ o   Cambiar a int64 ☑️
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas (1 "None", 2 "Low", 3 "Medium", 4"High").❌
+o	Convertir a categórico con etiquetas (0 "None", 1 "Low", 2 "Medium", 3"High").❌☑️
 
 29. TotalWorkingYears 👔 (Total de años de experiencia laboral del empleado)
 •	Nulos: 526
@@ -261,7 +261,7 @@ o	Tratar los valores nulos.❌
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas descriptivas (1"Bad", 2"Good", 3"Better", 4"Best").❌
+o	Convertir a categórico con etiquetas descriptivas (1"Bad", 2"Good", 3"Better", 4"Best").❌☑️
 o	Tratar los valores nulos.❌
 
 32. YearsAtCompany 🏢 (Años que el empleado ha trabajado en la empresa actual)
