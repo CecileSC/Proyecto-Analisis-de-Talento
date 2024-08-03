@@ -22,11 +22,11 @@ o	Cambiar tipo de dato de object a int64.☑️
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Reemplazar '_' por ' ' ☑️ y capitalizar los valores ( "travel_rarely" -> "Travel Rarely").❌☑️ 
+o	Reemplazar '_' por ' '  y capitalizar los valores  ( "travel_rarely" -> "Travel Rarely").❌☑️ 
 o	Decidir el tratamiento de los nulos (posible imputación o eliminación).❌
 
 4. DailyRate 💰 (La tarifa diaria del empleado)
-•	Nulos: 0
+•	Nulos: 0 
 •	Unique: 849
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -34,7 +34,7 @@ o	Decidir el tratamiento de los nulos (posible imputación o eliminación).❌
 o	Eliminar "$" y convertir a int64.☑️
 
 5. Department 🏢 (El departamento en el que trabaja el empleado)
-•	Nulos: 1312
+•	Nulos: 1312 
 •	Unique: 3
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -43,7 +43,7 @@ o	Decidir el tratamiento de los valores nulos.❌
     (1 Research & Development: 196, 2 Sales:91,3 Human Resources: 15)
    
 6. DistanceFromHome 🚗 (La distancia desde el hogar del empleado hasta su lugar de trabajo)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 69
 •	Tipo de Dato: int64
 •	Tipo de Variable: Numérica
@@ -51,7 +51,7 @@ o	Decidir el tratamiento de los valores nulos.❌
 o	Convertir valores negativos a positivos.☑️
 
 7. Education 🎓 (Nivel de educación del empleado)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 5
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
@@ -60,7 +60,7 @@ o	Convertir a categórica con etiquetas descriptivas ( 1."Primary", 2."Secondary
 o   Convertir a object.❌☑️
  
 8. EducationField 🧑‍🎓 (El campo de educación del empleado)
-•	Nulos: 745
+•	Nulos: 745 ❓ Desconocido - No tiene mucho sentido esta columna y la anterior. 
 •	Unique: 6
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -69,14 +69,14 @@ o	Decidir cómo tratar los valores nulos.❌
 (1. Life Sciences 349, 2. Medical 276, 3. Marketing 104, 4. Technical Degree 69, 5. Other 59, 6. Human Resources 12)
 
 9. EmployeeCount 📊 (Un contador que generalmente es 1)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 1
 •	Tipo de Dato: int64
 •	Tipo de Variable: Constante
 •	Transformaciones: Eliminar la columna.☑️
 
 10. EmployeeNumber 🆔 (Un número de identificación único para el empleado)
-•	Nulos: 431
+•	Nulos: 431 ❓ Desconocido 
 •	Unique: 1079
 •	Tipo de Dato: object
 •	Tipo de Variable: Identificador único
@@ -85,7 +85,7 @@ o	Convertir a formato numérico (int64).☑️
 o   Decidir que vamos a hacer con los nulos (lo vamos a dejar asi)❌
 
 11. EnvironmentSatisfaction 🌱 (Nivel de satisfacción del empleado en relación con su entorno de trabajo)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 4
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
@@ -95,7 +95,7 @@ o   Convertir a object.❌☑️
 o   Datos erroneos: pendiente de decidir si los datos distintos de 0,1,2,3,4 cogemos el primer digito o eliminamos.❌☑️
 
 12. Gender 👨‍👩‍👧‍👦 (El género del empleado)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 2
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
@@ -104,7 +104,7 @@ o	Convertir a categórico con etiquetas (0 "Male", 1 "Female")(Hombre:971, Mujer
 o   Convertir a object.❌☑️
 
 13. HourlyRate ⏰ (La tarifa por hora del empleado)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 72
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -113,7 +113,7 @@ o	Convertir a formato numérico (int64).☑️
 o   Cambiar el 'not available'por nan☑️
 
 14. JobInvolvement 💼 (Nivel de implicación del empleado en su trabajo)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 4
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
@@ -122,7 +122,7 @@ o	Convertir a categórico con etiquetas descriptivas (e.g., "Very Low", "Low", "
 o   Convertir a object.❌☑️
 
 15. JobLevel 🏢 (Nivel jerárquico del empleado en la empresa)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 5
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
@@ -131,7 +131,7 @@ o	Convertir a categórico con etiquetas jerárquicas (1 "Entry Level",2 "Assista
 o   Convertir a object.❌☑️
 
 16. JobRole 🏷️ (El rol o puesto de trabajo del empleado)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 9
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -140,7 +140,7 @@ o	Unificar la nomenclatura para evitar inconsistencias (e.g., "Manager" vs "mana
 
 
 17. JobSatisfaction 😊 (Nivel de satisfacción del empleado con su trabajo)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 4
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
@@ -149,7 +149,7 @@ o	Convertir a categórico con etiquetas (e.g., "Very Dissatisfied", "Dissatisfie
 o   Convertir a object.❌☑️
 
 18. MaritalStatus 💍 (El estado civil del empleado)
-•	Nulos: 651
+•	Nulos: 651 ❓ Desconocido
 •	Unique: 3
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -198,14 +198,14 @@ o   Decidir cómo manejar los valores nulos.❌
 o	Tratar los valores nulos y asegurarse de que los datos sean categóricos y consistentes.❌
 
 24. PercentSalaryHike 📈 (El porcentaje de aumento salarial del empleado)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 15
 •	Tipo de Dato: int64
 •	Tipo de Variable: Numérica
 •	Transformaciones: Ninguna
 
 25. PerformanceRating ⭐ (Calificación de rendimiento del empleado)
-•	Nulos: 195
+•	Nulos: 195 
 •	Unique: 2
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -214,7 +214,7 @@ o	Convertir a categórico con etiquetas (1 "Poor", 2 "Average", 3 "Good", 4 "Exc
 o   Decidir cómo manejar los valores nulos.❌
 
 26. RelationshipSatisfaction ❤️ (Nivel de satisfacción en las relaciones interpersonales)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 4
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
@@ -222,7 +222,7 @@ o   Decidir cómo manejar los valores nulos.❌
 o	Convertir a categórico con etiquetas (1 "Very Dissatisfied",2 "Dissatisfied", 3 "Satisfied",4 "Very Satisfied").❌☑️
 
 27. StandardHours ⏲️ (Las horas estándar de trabajo)
-•	Nulos: 1195
+•	Nulos: 1195 ❓ Desconocido - Mucha diferencia de salarios independientemente del rol. Mucha diferencia de sueldo dentro del mismo rol. 
 •	Unique: 1
 •	Tipo de Dato: object
 •	Tipo de Variable: Constante
@@ -231,7 +231,7 @@ o   Decidir cómo manejar los valores nulos.❌nulos a 160??
 o   Cambiar a int64 ☑️
 
 28. StockOptionLevel 📈 (Nivel de opciones de compra de acciones del empleado)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 4
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
@@ -248,7 +248,7 @@ o	Convertir a formato numérico (int64).☑️
 o	Tratar los valores nulos.❌
 
 30. TrainingTimesLastYear 🎓 (Número de veces que el empleado recibió capacitación el año pasado)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 7
 •	Tipo de Dato: int64
 •	Tipo de Variable: Numérica
@@ -265,7 +265,7 @@ o	Convertir a categórico con etiquetas descriptivas (1"Bad", 2"Good", 3"Better"
 o	Tratar los valores nulos.❌
 
 32. YearsAtCompany 🏢 (Años que el empleado ha trabajado en la empresa actual)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 37
 •	Tipo de Dato: int64
 •	Tipo de Variable: Numérica
@@ -281,7 +281,7 @@ o	Convertir a formato numérico (int64).☑️
 o	Decidir cómo manejar los valores nulos.❌
 
 34. YearsSinceLastPromotion 🚀 (Años desde la última promoción del empleado)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 16
 •	Duplicados: No
 •	Tipo de Dato: int64
@@ -289,7 +289,7 @@ o	Decidir cómo manejar los valores nulos.❌
 •	Transformaciones: Ninguna☑️
 
 35. YearsWithCurrManager 👔 (Años que el empleado ha estado bajo la supervisión del actual gerente)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 18
 •	Tipo de Dato: int64
 •	Tipo de Variable: Numérica
@@ -300,7 +300,7 @@ o	Decidir cómo manejar los valores nulos.❌
 •	Transformaciones: Eliminar la columna.☑️
 
 37. DateBirth 🎂 (Año de nacimiento del empleado)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 43
 •	Tipo de Dato: int64
 •	Tipo de Variable: Fecha
@@ -308,7 +308,7 @@ o	Decidir cómo manejar los valores nulos.❌
 o	Mantener como int64 si solo se requiere el año, o convertir a datetime si se desea análisis temporal más detallado. Mantener esta columna para la bbdd pero crear una nueva con el calculo de la edad? ❌
 
 38. Salary 💸 (Salario de los empleados)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: N/A
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -316,7 +316,7 @@ o	Mantener como int64 si solo se requiere el año, o convertir a datetime si se 
 o	Eliminar columna☑️
 
 39. RoleDepartament 🏢 (El departamento y el rol del empleado)
-•	Nulos: 1312
+•	Nulos: 1312 
 •	Unique: 301
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -331,7 +331,7 @@ o	Normalizar nombres (minusculas, capitalize)☑️ y decidir cómo manejar los 
 •	Transformaciones: Eliminar la columna.☑️
 
 41. RemoteWork 🏠 (Si el empleado puede teletrabajar o no)
-•	Nulos: 0
+•	Nulos: 0 ☑️
 •	Unique: 5
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
