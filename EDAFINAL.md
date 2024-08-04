@@ -17,7 +17,7 @@ o	Cambiar tipo de dato de object a int64.☑️
 •	Transformaciones: Ninguna ☑️
 
 3. BusinessTravel ✈️ (Frecuencia de los viajes relacionados con el trabajo)
-•	Nulos: 772
+•	Nulos: 772❌
 •	Unique: 3
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -35,7 +35,7 @@ o	Eliminar "$" y convertir a int64.☑️
 o	Decidir el tratamiento de los nulos (posible imputación o eliminación).❌
 
 5. Department 🏢 (El departamento en el que trabaja el empleado)
-•	Nulos: 1312 
+•	Nulos: 1312 ❌
 •	Unique: 3
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -61,7 +61,7 @@ o	Convertir a categórica con etiquetas descriptivas ( 1."Primary", 2."Secondary
 o   Convertir a object.❌☑️
  
 8. EducationField 🧑‍🎓 (El campo de educación del empleado)
-•	Nulos: 745 ❓ Desconocido - No tiene mucho sentido esta columna y la anterior. 
+•	Nulos: 745 ❓ Desconocido - No tiene mucho sentido esta columna y la anterior. ❌
 •	Unique: 6
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -77,7 +77,7 @@ o	Decidir cómo tratar los valores nulos.❌
 •	Transformaciones: Eliminar la columna.☑️
 
 10. EmployeeNumber 🆔 (Un número de identificación único para el empleado)
-•	Nulos: 431 ❓ Desconocido 
+•	Nulos: 431 ❓ Desconocido ❌
 •	Unique: 1079
 •	Tipo de Dato: object
 •	Tipo de Variable: Identificador único
@@ -151,7 +151,7 @@ o	Convertir a categórico con etiquetas (e.g., "Very Dissatisfied", "Dissatisfie
 o   Convertir a object.❌☑️
 
 18. MaritalStatus 💍 (El estado civil del empleado)
-•	Nulos: 651 ❓ Desconocido
+•	Nulos: 651 ❓ Desconocido❌
 •	Unique: 3
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -161,7 +161,7 @@ o   Decidir cómo manejar los valores nulos.❌
 o   Tenemos que unificar nombres y repetir recuento ( 'Married', 'Divorced', 'Single', 'divorced', 'Marreid') (1 divorced: 11, 2 Marreid: 35, 3 Divorced: 188, 4 Single: 325, 5 Married: 404) ❌
 
 19. MonthlyIncome 💵 (Ingresos mensuales del empleado)
-•	Nulos: 843
+•	Nulos: 843❌
 •	Unique: N/A
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -192,7 +192,7 @@ o   Decidir cómo manejar los valores nulos.❌
 •	Transformaciones: Eliminar la columna.☑️
 
 23. OverTime ⏱️ (Indica si el empleado trabaja horas extras)
-•	Nulos: 676
+•	Nulos: 676❌
 •	Unique: 2
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -207,7 +207,7 @@ o	Tratar los valores nulos y asegurarse de que los datos sean categóricos y con
 •	Transformaciones: Ninguna
 
 25. PerformanceRating ⭐ (Calificación de rendimiento del empleado)
-•	Nulos: 195 
+•	Nulos: 195 ❌
 •	Unique: 2
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -224,7 +224,7 @@ o   Decidir cómo manejar los valores nulos.❌
 o	Convertir a categórico con etiquetas (1 "Very Dissatisfied",2 "Dissatisfied", 3 "Satisfied",4 "Very Satisfied").❌☑️
 
 27. StandardHours ⏲️ (Las horas estándar de trabajo)
-•	Nulos: 1195 ❓ Desconocido - Mucha diferencia de salarios independientemente del rol. Mucha diferencia de sueldo dentro del mismo rol. 
+•	Nulos: 1195 ❓ Desconocido - Mucha diferencia de salarios independientemente del rol. Mucha diferencia de sueldo dentro del mismo rol. ❌
 •	Unique: 1
 •	Tipo de Dato: object
 •	Tipo de Variable: Constante
@@ -241,7 +241,7 @@ o   Cambiar a int64 ☑️
 o	Convertir a categórico con etiquetas (0 "None", 1 "Low", 2 "Medium", 3"High").❌☑️
 
 29. TotalWorkingYears 👔 (Total de años de experiencia laboral del empleado)
-•	Nulos: 526
+•	Nulos: 526❌
 •	Unique: 40
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -258,7 +258,7 @@ o	Tratar los valores nulos.❌
 •	Transformaciones: Ninguna ☑️
 
 31. WorkLifeBalance ⚖️ (Equilibrio entre trabajo y vida personal del empleado)
-•	Nulos: 108
+•	Nulos: 108❌
 •	Unique: 4
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -274,7 +274,7 @@ o	Tratar los valores nulos.❌
 •	Transformaciones: Ninguna☑️
 
 33. YearsInCurrentRole 📅 (Años que el empleado ha estado en su puesto actual)
-•	Nulos: 1580
+•	Nulos: 1580❌
 •	Unique: 10
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -318,7 +318,7 @@ o	Mantener como int64 si solo se requiere el año, o convertir a datetime si se 
 o	Eliminar columna☑️
 
 39. RoleDepartament 🏢 (El departamento y el rol del empleado)
-•	Nulos: 1312 
+•	Nulos: 1312 ❌
 •	Unique: 301
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
