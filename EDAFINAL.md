@@ -233,12 +233,13 @@ o   Decidir cómo manejar los valores nulos.❌nulos a 160??
 o   Cambiar a int64 ☑️
 
 28. StockOptionLevel 📈 (Nivel de opciones de compra de acciones del empleado)
-•	Nulos: 0 ☑️
+•	Nulos: 687 ❌
 •	Unique: 4
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
 o	Convertir a categórico con etiquetas (0 "None", 1 "Low", 2 "Medium", 3"High").❌☑️
+o   Decidir cómo manejar los valores nulos.❌
 
 29. TotalWorkingYears 👔 (Total de años de experiencia laboral del empleado)
 •	Nulos: 526❌
@@ -274,13 +275,15 @@ o	Tratar los valores nulos.❌
 •	Transformaciones: Ninguna☑️
 
 33. YearsInCurrentRole 📅 (Años que el empleado ha estado en su puesto actual)
-•	Nulos: 1580❌
+•	Nulos: 1580
 •	Unique: 10
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
 •	Transformaciones:
 o	Convertir a formato numérico (int64).☑️
-o	Decidir cómo manejar los valores nulos.❌
+o	Decidir cómo manejar los valores nulos.
+o   Eliminar columna ☑️❓❓❓
+
 
 34. YearsSinceLastPromotion 🚀 (Años desde la última promoción del empleado)
 •	Nulos: 0 ☑️
