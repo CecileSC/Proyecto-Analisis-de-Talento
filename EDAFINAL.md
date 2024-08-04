@@ -26,12 +26,13 @@ o	Reemplazar '_' por ' '  y capitalizar los valores  ( "travel_rarely" -> "Trave
 o	Decidir el tratamiento de los nulos (posible imputación o eliminación).❌
 
 4. DailyRate 💰 (La tarifa diaria del empleado)
-•	Nulos: 0 
+•	Nulos: 124❌ 
 •	Unique: 849
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
 •	Transformaciones:
 o	Eliminar "$" y convertir a int64.☑️
+o	Decidir el tratamiento de los nulos (posible imputación o eliminación).❌
 
 5. Department 🏢 (El departamento en el que trabaja el empleado)
 •	Nulos: 1312 
@@ -104,13 +105,14 @@ o	Convertir a categórico con etiquetas (0 "Male", 1 "Female")(Hombre:971, Mujer
 o   Convertir a object.❌☑️
 
 13. HourlyRate ⏰ (La tarifa por hora del empleado)
-•	Nulos: 0 ☑️
+•	Nulos: 84❌ 
 •	Unique: 72
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
 •	Transformaciones:
 o	Convertir a formato numérico (int64).☑️
 o   Cambiar el 'not available'por nan☑️
+o	Decidir el tratamiento de los nulos (posible imputación o eliminación).❌
 
 14. JobInvolvement 💼 (Nivel de implicación del empleado en su trabajo)
 •	Nulos: 0 ☑️
@@ -338,3 +340,35 @@ o	Normalizar nombres (minusculas, capitalize)☑️ y decidir cómo manejar los 
 •	Transformaciones:
 o	Unificar los valores a "Yes" y "No" para mayor consistencia.❌☑️
 
+## Pendiente
+
+Próximos Pasos 🚀
+1. Limpieza Adicional de Datos 🧼
+Revisar y corregir valores faltantes en columnas.
+Verificar y ajustar tipos de datos restantes.
+
+2. Gestión de Valores Nulos 🛠️
+Identificar todas las columnas con valores nulos.
+Decidir la estrategia para gestionar nulos (eliminación, imputación con media/mediana/moda, etc.).
+Implementar la estrategia de gestión de nulos en el notebook de EDA.
+
+3. Análisis Exploratorio de Datos Continuo 📊
+Generar más visualizaciones para identificar patrones y tendencias.
+Realizar análisis estadísticos adicionales para descubrir relaciones entre variables.
+Documentar los hallazgos en el notebook.
+
+4. Diseño de la Base de Datos 🗂️
+Definir la estructura de la base de datos (tablas, relaciones, claves primarias y foráneas).☑️
+Crear scripts SQL para la creación de la base de datos y tablas.
+
+5. Inserción de Datos en la Base de Datos 📝
+Escribir scripts para cargar los datos transformados en la base de datos.
+
+6. Preparación para el Experimento A/B 🔬
+
+7. Automatización con ETL 🤖
+
+8. Creación del Informe Final 📈
+Actualizar el informe con nuevas visualizaciones y análisis.
+Redactar secciones adicionales del informe, incluyendo recomendaciones basadas en el análisis de datos.
+Preparar una presentación final con los resultados y recomendaciones para ABC Corporation.
