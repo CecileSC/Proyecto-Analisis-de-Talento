@@ -26,7 +26,7 @@ o	Reemplazar '_' por ' '  y capitalizar los valores  ( "travel_rarely" -> "Trave
 o	Decidir el tratamiento de los nulos (posible imputación o eliminación).❌
 
 4. DailyRate 💰 (La tarifa diaria del empleado)
-•	Nulos: 124❌ 
+•	Nulos: 124❌ MEDIA
 •	Unique: 849
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -61,12 +61,12 @@ o	Convertir a categórica con etiquetas descriptivas ( 1."Primary", 2."Secondary
 o   Convertir a object.❌☑️
  
 8. EducationField 🧑‍🎓 (El campo de educación del empleado)
-•	Nulos: 745 ❓ Desconocido - No tiene mucho sentido esta columna y la anterior. ❌ "ELIMINAR COLUMNA "
+•	Nulos: 745 ❓ Desconocido - No tiene mucho sentido esta columna y la anterior. ❌ "ELIMINAR COLUMNA "☑️
 •	Unique: 6
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Decidir cómo tratar los valores nulos.❌
+o	Decidir cómo tratar los valores nulos.❌ 
 (1. Life Sciences 349, 2. Medical 276, 3. Marketing 104, 4. Technical Degree 69, 5. Other 59, 6. Human Resources 12)
 
 9. EmployeeCount 📊 (Un contador que generalmente es 1)
@@ -82,7 +82,7 @@ o	Decidir cómo tratar los valores nulos.❌
 •	Tipo de Dato: object
 •	Tipo de Variable: Identificador único
 •	Transformaciones:
-o	Convertir a formato numérico (int64).☑️ "QUITAR PASAR A INT"
+o	Convertir a formato numérico (int64).☑️ "QUITAR PASAR A INT (queda en object)" ☑️
 o   Decidir que vamos a hacer con los nulos (lo vamos a dejar asi)❌
 
 11. EnvironmentSatisfaction 🌱 (Nivel de satisfacción del empleado en relación con su entorno de trabajo)
@@ -105,7 +105,7 @@ o	Convertir a categórico con etiquetas (0 "Male", 1 "Female")(Hombre:971, Mujer
 o   Convertir a object.❌☑️
 
 13. HourlyRate ⏰ (La tarifa por hora del empleado)
-•	Nulos: 84❌ "NO SE QUE HACER"
+•	Nulos: 84❌ "NO SE QUE HACER" COMO ESTA
 •	Unique: 72
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -156,12 +156,12 @@ o   Convertir a object.❌☑️
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Corregir errores tipográficos.❌
+o	Corregir errores tipográficos.❌ ☑️
 o   Decidir cómo manejar los valores nulos.❌
-o   Tenemos que unificar nombres y repetir recuento ( 'Married', 'Divorced', 'Single', 'divorced', 'Marreid') (1 divorced: 11, 2 Marreid: 35, 3 Divorced: 188, 4 Single: 325, 5 Married: 404) ❌
+o   Tenemos que unificar nombres y repetir recuento ( 'Married', 'Divorced', 'Single', 'divorced', 'Marreid') (1 divorced: 11, 2 Marreid: 35, 3 Divorced: 188, 4 Single: 325, 5 Married: 404) ❌☑️
 
 19. MonthlyIncome 💵 (Ingresos mensuales del empleado)
-•	Nulos: 843❌CORRELACIONES
+•	Nulos: 843❌CORRELACIONES COMO ESTA
 •	Unique: N/A
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -231,16 +231,16 @@ o	Convertir a categórico con etiquetas (1 "Very Dissatisfied",2 "Dissatisfied",
 •	Transformaciones: Considerar si eliminar o mantener la columna, verificar coherencia.❌
 o   Decidir cómo manejar los valores nulos.❌nulos a 160??
 o   Cambiar a int64 ☑️
-•	Transformaciones: Eliminar la columna. "ELIMINAR COLUMNA"
+•	Transformaciones: Eliminar la columna. "ELIMINAR COLUMNA" ☑️
 
 28. StockOptionLevel 📈 (Nivel de opciones de compra de acciones del empleado)
-•	Nulos: 687 ❌ ESTA EN EL CERO "NONE" "NO HAY NULOS"
+•	Nulos: 687 ❌ ESTA EN EL CERO "NONE" "NO HAY NULOS" ☑️
 •	Unique: 4
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas (0 "ZERO" (CAMBIAR), 1 "Low", 2 "Medium", 3"High").❌☑️
-o   Decidir cómo manejar los valores nulos.❌
+o	Convertir a categórico con etiquetas (0 "ZERO" (CAMBIAR)☑️, 1 "Low", 2 "Medium", 3"High").❌☑️
+o   Decidir cómo manejar los valores nulos.❌ ☑️
 
 29. TotalWorkingYears 👔 (Total de años de experiencia laboral del empleado)
 •	Nulos: 526❌ "ITERATIVE"
@@ -283,7 +283,7 @@ o	Tratar los valores nulos.❌
 •	Transformaciones:
 o	Convertir a formato numérico (int64).☑️
 o	Decidir cómo manejar los valores nulos.
-o   Eliminar columna "HAY QUE ELIMINARLA"
+o   Eliminar columna "HAY QUE ELIMINARLA" ☑️
 
 
 34. YearsSinceLastPromotion 🚀 (Años desde la última promoción del empleado)
@@ -311,7 +311,7 @@ o   Eliminar columna "HAY QUE ELIMINARLA"
 •	Tipo de Dato: int64
 •	Tipo de Variable: Fecha
 •	Transformaciones:
-o	Mantener como int64 si solo se requiere el año, o convertir a datetime si se desea análisis temporal más detallado. Mantener esta columna para la bbdd pero crear una nueva con el calculo de la edad? ❌
+o	Mantener como int64 si solo se requiere el año, o convertir a datetime si se desea análisis temporal más detallado. Mantener esta columna para la bbdd pero crear una nueva con el calculo de la edad? ❌ SE QUEDA EN INT
 
 38. Salary 💸 (Salario de los empleados)
 •	Nulos: 0 ☑️
@@ -322,13 +322,13 @@ o	Mantener como int64 si solo se requiere el año, o convertir a datetime si se 
 o	Eliminar columna☑️
 
 39. RoleDepartament 🏢 (El departamento y el rol del empleado)
-•	Nulos: 1312 ❌
+•	Nulos: 1312 ❌ 
 •	Unique: 301
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Normalizar nombres (minusculas, capitalize)☑️ y decidir cómo manejar los valores nulos.❌
-o	Eliminar columna "HAY QUE ELIMINAR"
+o	Normalizar nombres (minusculas, capitalize) ☑️y decidir cómo manejar los valores nulos.❌
+o	Eliminar columna "HAY QUE ELIMINAR"☑️
 
 40. NumberChildren 👶 (Número de hijos de los empleados)
 •	Nulos: 1614
