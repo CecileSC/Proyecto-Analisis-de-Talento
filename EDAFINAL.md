@@ -17,7 +17,7 @@ o	Cambiar tipo de dato de object a int64.☑️
 •	Transformaciones: Ninguna ☑️
 
 3. BusinessTravel ✈️ (Frecuencia de los viajes relacionados con el trabajo)
-•	Nulos: 772❌
+•	Nulos: 772❌    "desconocido"
 •	Unique: 3
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -35,7 +35,7 @@ o	Eliminar "$" y convertir a int64.☑️
 o	Decidir el tratamiento de los nulos (posible imputación o eliminación).❌
 
 5. Department 🏢 (El departamento en el que trabaja el empleado)
-•	Nulos: 1312 ❌
+•	Nulos: 1312 ❌ "MODA" 
 •	Unique: 3
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -61,7 +61,7 @@ o	Convertir a categórica con etiquetas descriptivas ( 1."Primary", 2."Secondary
 o   Convertir a object.❌☑️
  
 8. EducationField 🧑‍🎓 (El campo de educación del empleado)
-•	Nulos: 745 ❓ Desconocido - No tiene mucho sentido esta columna y la anterior. ❌
+•	Nulos: 745 ❓ Desconocido - No tiene mucho sentido esta columna y la anterior. ❌ "ELIMINAR COLUMNA "
 •	Unique: 6
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -77,12 +77,12 @@ o	Decidir cómo tratar los valores nulos.❌
 •	Transformaciones: Eliminar la columna.☑️
 
 10. EmployeeNumber 🆔 (Un número de identificación único para el empleado)
-•	Nulos: 431 ❓ Desconocido ❌
+•	Nulos: 431 ❓ "PASAR A DESCONOCIDO"
 •	Unique: 1079
 •	Tipo de Dato: object
 •	Tipo de Variable: Identificador único
 •	Transformaciones:
-o	Convertir a formato numérico (int64).☑️
+o	Convertir a formato numérico (int64).☑️ "QUITAR PASAR A INT"
 o   Decidir que vamos a hacer con los nulos (lo vamos a dejar asi)❌
 
 11. EnvironmentSatisfaction 🌱 (Nivel de satisfacción del empleado en relación con su entorno de trabajo)
@@ -105,7 +105,7 @@ o	Convertir a categórico con etiquetas (0 "Male", 1 "Female")(Hombre:971, Mujer
 o   Convertir a object.❌☑️
 
 13. HourlyRate ⏰ (La tarifa por hora del empleado)
-•	Nulos: 84❌ 
+•	Nulos: 84❌ "NO SE QUE HACER"
 •	Unique: 72
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -151,7 +151,7 @@ o	Convertir a categórico con etiquetas (e.g., "Very Dissatisfied", "Dissatisfie
 o   Convertir a object.❌☑️
 
 18. MaritalStatus 💍 (El estado civil del empleado)
-•	Nulos: 651 ❓ Desconocido❌
+•	Nulos: 651 ❓"Desconocido"
 •	Unique: 3
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -161,7 +161,7 @@ o   Decidir cómo manejar los valores nulos.❌
 o   Tenemos que unificar nombres y repetir recuento ( 'Married', 'Divorced', 'Single', 'divorced', 'Marreid') (1 divorced: 11, 2 Marreid: 35, 3 Divorced: 188, 4 Single: 325, 5 Married: 404) ❌
 
 19. MonthlyIncome 💵 (Ingresos mensuales del empleado)
-•	Nulos: 843❌
+•	Nulos: 843❌CORRELACIONES
 •	Unique: N/A
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -192,7 +192,7 @@ o   Decidir cómo manejar los valores nulos.❌
 •	Transformaciones: Eliminar la columna.☑️
 
 23. OverTime ⏱️ (Indica si el empleado trabaja horas extras)
-•	Nulos: 676❌
+•	Nulos: 676❌ "MODA"
 •	Unique: 2
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -207,7 +207,7 @@ o	Tratar los valores nulos y asegurarse de que los datos sean categóricos y con
 •	Transformaciones: Ninguna
 
 25. PerformanceRating ⭐ (Calificación de rendimiento del empleado)
-•	Nulos: 195 ❌
+•	Nulos: 195 ❌ "MODA"
 •	Unique: 2
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -231,18 +231,19 @@ o	Convertir a categórico con etiquetas (1 "Very Dissatisfied",2 "Dissatisfied",
 •	Transformaciones: Considerar si eliminar o mantener la columna, verificar coherencia.❌
 o   Decidir cómo manejar los valores nulos.❌nulos a 160??
 o   Cambiar a int64 ☑️
+•	Transformaciones: Eliminar la columna. "ELIMINAR COLUMNA"
 
 28. StockOptionLevel 📈 (Nivel de opciones de compra de acciones del empleado)
-•	Nulos: 687 ❌
+•	Nulos: 687 ❌ ESTA EN EL CERO "NONE" "NO HAY NULOS"
 •	Unique: 4
 •	Tipo de Dato: int64
 •	Tipo de Variable: Categórica
 •	Transformaciones:
-o	Convertir a categórico con etiquetas (0 "None", 1 "Low", 2 "Medium", 3"High").❌☑️
+o	Convertir a categórico con etiquetas (0 "ZERO" (CAMBIAR), 1 "Low", 2 "Medium", 3"High").❌☑️
 o   Decidir cómo manejar los valores nulos.❌
 
 29. TotalWorkingYears 👔 (Total de años de experiencia laboral del empleado)
-•	Nulos: 526❌
+•	Nulos: 526❌ "ITERATIVE"
 •	Unique: 40
 •	Tipo de Dato: object
 •	Tipo de Variable: Numérica
@@ -259,7 +260,7 @@ o	Tratar los valores nulos.❌
 •	Transformaciones: Ninguna ☑️
 
 31. WorkLifeBalance ⚖️ (Equilibrio entre trabajo y vida personal del empleado)
-•	Nulos: 108❌
+•	Nulos: 108❌ "MODA"
 •	Unique: 4
 •	Tipo de Dato: object
 •	Tipo de Variable: Categórica
@@ -282,7 +283,7 @@ o	Tratar los valores nulos.❌
 •	Transformaciones:
 o	Convertir a formato numérico (int64).☑️
 o	Decidir cómo manejar los valores nulos.
-o   Eliminar columna ☑️❓❓❓
+o   Eliminar columna "HAY QUE ELIMINARLA"
 
 
 34. YearsSinceLastPromotion 🚀 (Años desde la última promoción del empleado)
@@ -327,6 +328,7 @@ o	Eliminar columna☑️
 •	Tipo de Variable: Categórica
 •	Transformaciones:
 o	Normalizar nombres (minusculas, capitalize)☑️ y decidir cómo manejar los valores nulos.❌
+o	Eliminar columna "HAY QUE ELIMINAR"
 
 40. NumberChildren 👶 (Número de hijos de los empleados)
 •	Nulos: 1614
